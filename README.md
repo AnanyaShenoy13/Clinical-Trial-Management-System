@@ -36,13 +36,8 @@ A web-based application designed to streamline the management of clinical trials
 
 git clone https://github.com/yourusername/Clinical-Trial-Management-System.git
 Place the folder in htdocs/ directory of XAMPP
-
 Start Apache and MySQL in XAMPP Control Panel
-
-Open http://localhost/phpmyadmin/ and create a new database named:
-
-clinical_trials
-
+Open http://localhost/phpmyadmin/ and create a new database named: clinical_trials
 Import the SQL schema:
 Use clinical_trials.sql provided (if any) or manually create tables:
 participant, researcher, trial, etc.
@@ -52,7 +47,7 @@ Open in browser:
 
 http://localhost/Clinical-Trial-Management-System/login.php
 
-🧪 Sample Use Cases
+🧪 Sample Use Cases<br>
 🧑‍⚕️ Real-world simulation of managing participants in clinical drug trials<br>
 📊 Academic or research-oriented trial data management system<br>
 💾 Demonstrates full-stack CRUD operations using PHP and MySQL<br>
