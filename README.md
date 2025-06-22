@@ -43,7 +43,9 @@ http://localhost/phpmyadmin/
         - trial
         (and any additional ones used in your code)
 
-🧪 Sample Use Cases<br>
+---
+
+### 🧪 Sample Use Cases<br>
 ‍⚕️ Real-world simulation of managing participants in clinical drug trials<br>
 📊 Academic or research-oriented trial data management system<br>
 💾 Demonstrates full-stack CRUD operations using PHP and MySQL<br>
