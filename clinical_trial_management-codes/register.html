@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Clinical Trial Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('image3.jpg'); /* Add your background image here */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            overflow-y: auto;
+            max-height: 80vh; /* Adjust height to ensure it fits in the viewport */
+        }
+
+        .container h1 {
+            margin-bottom: 20px;
+        }
+
+        .container label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .container input, .container select, .container textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .container button {
+            background-color: #007BFF; /* Changed button color to blue */
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .container button:hover {
+            background-color: #0056b3; /* Darker blue for hover */
+        }
+
+        .container p {
+            margin-top: 15px;
+        }
+
+        .container a {
+            color: #007BFF; /* Changed link color to match button */
+            text-decoration: none;
+        }
+
+        .container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form id="registerForm" method="post" action="register_user.php">
+            <label for="nameParticipant">Name:</label>
+            <input type="text" id="nameParticipant" name="name" required>
+            
+            <label for="ageParticipant">Age:</label>
+            <input type="number" id="ageParticipant" name="age" required>
+            
+            <label for="genderParticipant">Gender:</label>
+            <select id="genderParticipant" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="medical_historyParticipant">Medical History:</label>
+            <textarea id="medical_historyParticipant" name="medical_history" required></textarea>
+            
+            <label for="contact_informationParticipant">Contact Information:</label>
+            <input type="text" id="contact_informationParticipant" name="contact_information" required>
+            
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit" class="button">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+</body>
+</html>

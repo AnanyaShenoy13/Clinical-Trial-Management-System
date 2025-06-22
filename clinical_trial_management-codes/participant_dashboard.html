@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant Dashboard - Clinical Trial Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h1 {
+            text-align: center;
+            color: #333;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            margin-bottom: 20px; /* Added margin */
+        }
+        nav ul li {
+            display: inline-block; /* Display as blocks to allow margin */
+            margin-right: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 12px 20px; /* Increased padding for better button size */
+            border-radius: 4px;
+            background-color: #f2f2f2; /* Light gray background */
+            transition: background-color 0.3s ease;
+            display: block; /* Make the entire block clickable */
+            text-align: center;
+            border: 1px solid #ccc; /* Added border */
+        }
+        nav ul li a:hover {
+            background-color: #ddd; /* Light gray hover background */
+        }
+        .logout-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #ccc;
+            padding: 8px 16px;
+            border-radius: 4px;
+            background-color: #f2f2f2;
+            transition: background-color 0.3s ease;
+        }
+        .logout-link:hover {
+            background-color: #ddd;
+        }
+        #dashboardContent {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Participant Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="loadProfile()">My Profile</a></li>
+                <li><a href="#" onclick="loadAppointments()">Upcoming Appointments</a></li>
+                <li><a href="#" onclick="loadTrialStatus()">Trial Participation Status</a></li>
+                <li><a href="#" onclick="loadRecordData()">Record Trial Data</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+        <div id="dashboardContent">
+            <!-- Dynamic content loaded here -->
+        </div>
+    </div>
+
+    <script>
+        function loadProfile() {
+            // Example: Fetch and display profile data
+            document.getElementById('dashboardContent').innerHTML = '<h2>Profile Details</h2><p>Participant ID, Name, Age, Gender, Medical History, Contact Information</p>';
+        }
+
+        function loadAppointments() {
+            // Example: Fetch and display upcoming appointments
+            document.getElementById('dashboardContent').innerHTML = '<h2>Upcoming Appointments</h2><ul><li>Appointment 1 details</li><li>Appointment 2 details</li></ul>';
+        }
+
+        function loadTrialStatus() {
+            // Example: Fetch and display trial participation status
+            document.getElementById('dashboardContent').innerHTML = '<h2>Trial Participation Status</h2><p>List of trials participant is involved in with status</p>';
+        }
+
+        function loadRecordData() {
+            // Example: Direct participant to record trial data page
+            window.location.href = 'record_data.html';
+        }
+    </script>
+</body>
+</html>

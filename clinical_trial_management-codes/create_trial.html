@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Trial - Clinical Trial Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create New Trial</h1>
+        <form action="create_trial.php" method="post">
+            <label for="name">Trial Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <label for="inclusion_criteria">Inclusion Criteria:</label>
+            <textarea id="inclusion_criteria" name="inclusion_criteria" required></textarea>
+            
+            <label for="exclusion_criteria">Exclusion Criteria:</label>
+            <textarea id="exclusion_criteria" name="exclusion_criteria" required></textarea>
+            
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_date" required>
+            
+            <label for="end_date">End Date:</label>
+            <input type="date" id="end_date" name="end_date" required>
+            
+            <button type="submit" class="button">Create Trial</button>
+        </form>
+    </div>
+</body>
+</html>
